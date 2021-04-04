@@ -7,6 +7,7 @@ inputElement.addEventListener('keyup', (e)=>{
 })
 
 function addList(e){
+    
     const notCompleted = document.querySelector('.notCompleted');
     const Completed = document.querySelector('.Completed');
 
@@ -16,6 +17,7 @@ function addList(e){
 
     checkBtn.innerHTML = '<i class="fa fa-check"></i>';
     delBtn.innerHTML = '<i class="fa fa-trash"></i>';
+    
 
     if(inputElement.value !==''){
         newLi.textContent = inputElement.value;
